@@ -4,7 +4,7 @@ new PlayerText:PlayerTD[MAX_PLAYERS][4], Float:g_LoadingF[MAX_PLAYERS];
 
 hook OnPlayerConnect(playerid)
 {
-    //TogglePlayerSpectating(playerid, true);
+    g_LoadingF[playerid] = 0;
     CarregarTDELoad(playerid);
     LoadingTDE(playerid, true);
     return 1;
