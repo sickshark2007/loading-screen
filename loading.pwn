@@ -101,7 +101,6 @@ public UpdateLoad(playerid) // 1073 = cinza / 646 = branco
         return LoadingTDE(playerid, false);
     }
 
-    PlayerTextDrawHide(playerid, PlayerTD[playerid][3]);
     PlayerTextDrawTextSize(playerid, PlayerTD[playerid][3], -250, (1081.500000 - g_LoadingF[playerid]));
     PlayerTextDrawShow(playerid, PlayerTD[playerid][3]);
     g_LoadingF[playerid] += 1;
